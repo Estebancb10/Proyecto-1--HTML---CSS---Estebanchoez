@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root{
+    --bg-color: #fffff6;
+    --base-color: #20282b;
+    --accent-color: #db5032;
+    --spacing: 20px;
+    --shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    --border-radius: 20px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "archivo" sans-serif;
+  background-color: var(--bg-color);
+  color: var(--base-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Archivo Black" sans-serif;
+  color: var(--accent-color);
+} 
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/*HEADER*/
+
+header {
+  padding: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(imagenes/paisajes.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header ul {
+  display: flex;
+  gap: var(--spacing);
+}
+
+section {
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+/*MUESTRA*/
+
+#Muestra {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  text-align: center;
+}
+
+#Muestra img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img:nth-child(1){
+  grid-column: 1/4;
+}
+
+/*MENU*/
+
+section > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing);
+  text-align: center;
+}
+
+#Menu h2 {
+  padding: var(--spacing);
+  text-align: center;
+}
+
+
+#Menu img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+section > ul > li {
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing);
+  gap: var(--spacing); 
+  border-radius: var(--border-radius);
+}
+
+#Menu li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px #33a3ff;
+}
+
+/*PAISAJES*/
+
+#paisajes h2{
+  padding: var(--spacing);
+  margin: var(--spacing);
+  text-align: center;
+}
+
+#p {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  text-align: center;
+}
+#paisajes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*VILLAS*/
+
+#villas h2{
+  padding: var(--spacing);
+  margin: var(--spacing);
+  text-align: center;
+}
+
+#v {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  text-align: center;
+}
+
+#villas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Fiestas*/
+
+#fiestas h2{
+  padding: var(--spacing);
+  margin: var(--spacing);
+  text-align: center;
+}
+
+#f {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  text-align: center;
+}
+
+#fiestas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Retratos*/
+
+#retrato h2{
+  padding: var(--spacing);
+  margin: var(--spacing);
+  text-align: center;
+}
+
+#r {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  text-align: center;
+}
+
+#retrato img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*FOOTER*/
+
+footer {
+  background-image: url(imagenes/manta.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contacto {
+  text-align: center;
+}
+
+#copyright {
+  padding: var(--spacing);
+  text-align: center;
+}
